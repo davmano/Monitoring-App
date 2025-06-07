@@ -79,7 +79,17 @@ Prometheus: http://localhost:9090
 
 Default Grafana login: admin / prom-operator
 
+### Screenshots Grafana Metrics & Prometheus
+![Screenshot 2025-06-07 141931](https://github.com/user-attachments/assets/ecbcffe2-1fca-40cd-ab99-931bd54518da)
+
+![Screenshot 2025-06-07 142843](https://github.com/user-attachments/assets/d853e74f-4f52-45e5-b039-7f3b9b5f0cda)
+
 ## 📊 Metrics Observed
+
+![Screenshot 2025-06-07 142106](https://github.com/user-attachments/assets/a80628a7-7ba7-47cc-a545-96a4d0bc863c)
+
+![Screenshot 2025-06-07 142929](https://github.com/user-attachments/assets/21b7287e-24c8-4182-9b37-b8d8e3c0265c)
+
 
 `http_request_duration_seconds_count` 
 
