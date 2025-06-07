@@ -1,0 +1,15 @@
+grafana:
+  service:
+    type: NodePort
+  adminUser: admin
+  adminPassword: prom-operator
+
+prometheus:
+  service:
+    type: NodePort
+  prometheusSpec:
+    additionalScrapeConfigs:
+      - job_name: 'flask-api'
+        static_configs:
+          - targets: ['flask-api.devops-app.svc.cluster.local:5000']
+
