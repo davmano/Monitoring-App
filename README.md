@@ -79,7 +79,7 @@ Prometheus: http://localhost:9090
 
 Default Grafana login: admin / prom-operator
 
-### Screenshots Grafana Metrics & Prometheus
+## Screenshots Grafana Dashboard
 ![Screenshot 2025-06-07 141931](https://github.com/user-attachments/assets/ecbcffe2-1fca-40cd-ab99-931bd54518da)
 
 ![Screenshot 2025-06-07 142843](https://github.com/user-attachments/assets/d853e74f-4f52-45e5-b039-7f3b9b5f0cda)
@@ -100,6 +100,7 @@ Default Grafana login: admin / prom-operator
 ## 📈 Dashboards
 
 `Import this dashboard in Grafana:`
+![Screenshot 2025-06-07 143113](https://github.com/user-attachments/assets/ec4aefb9-e05e-48d2-ac30-fa37d28a68ce)
 
 -  Dashboard ID: `14057` (Flask Prometheus Exporter)
 
