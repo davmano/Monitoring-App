@@ -46,7 +46,8 @@ git clone https://github.com/davmano/devops-app.git
 cd your-repo
 ```
 ```
-docker build -t davmano/flask-api:latest .
+docker buildx build -t davmano/flask-api:latest ./app
+docker buildx build --load -t davmano/flask-api:latest ./app
 docker push davmano/flask-api:latest
 ``` 
 ### 2. 🧱 Create Kind Cluster (if using Kind)
