@@ -3,15 +3,15 @@ This project demonstrates how to deploy a simple Python Flask API in Kubernetes 
 
 ## 📁 Project Structure
 ``` 
-├── dockerfile                      # Dockerfile for Flask API
-├── flask-api/                     # Flask API source code
+├── dockerfile                   
+├── flask-api/                   
 │   ├── app.py
 │   └── requirements.txt
 ├── k8s/
-│   ├── flask-deployment.yaml      # Kubernetes Deployment & Service for Flask API
-│   ├── frontend-deployment.yaml   # (Optional) Frontend app setup
-│   └── monitoring-values.yaml     # Custom Prometheus + Grafana Helm config
-├── kind-config.yaml               # Kind cluster configuration (if used)
+│   ├── flask-deployment.yaml     
+│   ├── frontend-deployment.yaml  
+│   └── monitoring-values.yaml   
+├── kind-config.yaml               
 └── README.md
 ```
 
