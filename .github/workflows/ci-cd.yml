@@ -21,7 +21,8 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/flask-api:latest .
+          docker buildx build -t ${{ secrets.DOCKER_USERNAME }}/flask-api:latest ./app
+          docker buildx build --load -t ${{ secrets.DOCKER_USERNAME }}/flask-api:latest ./app
 
       - name: Push Docker Image
         run: |
