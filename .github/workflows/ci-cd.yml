@@ -28,24 +28,4 @@ jobs:
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/flask-api:latest
 
-  deploy-to-k8s:
-    needs: build-and-push
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      - name: Set up Kubeconfig
-        run: |
-          echo "${{ secrets.KUBECONFIG_DATA }}" > kubeconfig.yaml
-          mkdir -p ~/.kube
-          cp kubeconfig.yaml ~/.kube/config
-
-      - name: Set K8s Context and Deploy
-        run: |
-          kubectl config get-contexts
-          kubectl config use-context kind-kind || true
-          kubectl rollout restart deployment flask-api -n devops-app
-
 
